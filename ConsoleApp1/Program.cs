@@ -9,12 +9,9 @@ namespace Task21
         private static List<string> statistics;
         static void Main(string[] args)
         {
-            Console.WriteLine("Task 2.1");
             Console.WriteLine("Game Stone-Scissors-Paper.");
-            Console.WriteLine("Author: Safroniuk Oleksii\n");
             PlayGame();
         }
-
         static void PlayGame()
         {
             Console.WriteLine("Stone-Scissors-Paper");
@@ -49,10 +46,8 @@ namespace Task21
                         Console.WriteLine("Try again.");
                         break;
                 }
-
             }
         }
-
         static void Game(int command)
         {
             var computer = ComputerChoice();
@@ -76,7 +71,6 @@ namespace Task21
             var figure = random.Next(3);
             return figure;
         }
-
         static string GetGameResult(int person, int computer)
         {
             //0 - computer wins, 1 - person wins, 2 - draw
@@ -86,7 +80,6 @@ namespace Task21
             else if ((computer + 1) % 3 == person) return "Computer wins.";
             else return "You win!!!";
         }
-
         static void PrintComputerChoice(int comp)
         {
             Console.Write($"Computer's choice: ");

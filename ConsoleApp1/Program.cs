@@ -63,7 +63,6 @@ namespace Task21
             Console.WriteLine("\tpaper");
             Console.WriteLine("\texit\n");
         }
-
         static int ComputerChoice()
         {
             var random = new Random();

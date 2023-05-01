@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace Task21
 {
-
     class Program
     {
         private static List<string> statistics;
